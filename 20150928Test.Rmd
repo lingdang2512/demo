@@ -1,0 +1,74 @@
+---
+title: "GEO50320150928"
+author: "Dameng Yin"
+date: "September 28, 2015"
+output: html_document
+---
+***
+# Test
+Time: `r Sys.time()`
+
+## Brief introduction
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. 
+
+***
+## What you can do include:
+* Embeding an R code chunk
+* Embeding a plot
+* Creating Equations
+
+***
+### To embed an R code chunk
+
+#### 1. You can embed an R code chunk with both the code and the result like this:
+
+```{r}
+summary(cars)
+```
+
+#### 2. You can embed only the R code like this:
+
+```{r eval=F}
+summary(cars)
+```
+
+> **The code you use** for embeding only the code is: `{r eval=F} summary(cars)`
+
+#### 3. You can embed only the result of the R code chunk, like this:
+```{r echo=F}
+summary(cars)
+```
+> **The code you use** for embeding only the result is:`{r echo=F} summary(cars)`
+
+#### 4. You can also change the comment characters:
+
+```{r echo=F, comment="%%"}
+summary(cars)
+```
+
+> **The code you use** to change the comment characters is:`{r echo=F, comment="%%" summary(cars)}`
+
+***
+### To embed a plot
+
+#### 1. You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+#### 2. The configuration of the plot can be modified:
+
+```{r, echo=F, fig.height=6, fig.width=6}
+plot(cars)
+```
+
+***
+### To create an equation
+$A = \pi * r^{2}$
+
+or
+
+$\lambda = c/\nu$

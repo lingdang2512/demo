@@ -13,7 +13,7 @@ library(maps)
 library(spocc)
 ```
 
-## ---- cache=T------------------------------------------------------------
+## ---- cache=T-----
 ## define which species to query
 ```{r}
 sp='Turdus migratorius'
@@ -24,7 +24,7 @@ sp='Turdus migratorius'
 d = occ(query=sp, from='ebird',limit = 1000) %>% occ2df()
 ```
 
-## ---- fig.width=6--------------------------------------------------------
+## ---- fig.width=6----
 # Load coastline
 ```{r}
 map=map_data("world")
